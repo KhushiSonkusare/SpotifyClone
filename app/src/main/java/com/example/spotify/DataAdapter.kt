@@ -54,7 +54,8 @@ class DataAdapter(val context: Activity, val datalist: Tracks?) :
                 .build()
 
             val apiIdInterface = retrofit.create(ApiIdInterface::class.java)
-            val trackdata = apiIdInterface.getData(currentData.name)
+            val searchterm = "${currentData.name}" + " ${currentData.artists[0].name}"
+            val trackdata = apiIdInterface.getData(searchterm)
             Log.d("API CALL", "API CALL: ${currentData.name}")
 
             trackdata.enqueue(object : Callback<MyData?> {
