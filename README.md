@@ -29,3 +29,7 @@ The app utilizes the Spotify API to search for music tracks based on user input.
 - **Search Endpoint:** Used to search for music tracks based on keywords entered by the user.
 - **Track Endpoint:** Used to retrieve detailed information about a specific music track, including its artists, album, and audio preview.
 
+  ## Image
+  ![Example Image](Screenshot_20240522_204828.png)
+
+
